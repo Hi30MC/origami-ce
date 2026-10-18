@@ -5,6 +5,7 @@ using Util;
 namespace Parts;
 
 internal static class CompositionGlyph {
+
     public static readonly HexIndex CompositionInputA = new(-1, 0);
     public static readonly HexIndex CompositionInputB = new(0, 0);
     public static readonly HexIndex CompositionOutput = new(0, 1);
@@ -60,6 +61,7 @@ internal static class CompositionGlyph {
     public static bool OnCyle(Sim sim, Part part, PartSimState pss, GlyphRecipe recipe, bool first)
     {
         SolutionEditorBase seb = sim.solutionEditor;
+
         if (first) //first half-cycle
         {
             HexIndex holeA = part.InFrontBy(CompositionInputA);

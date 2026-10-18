@@ -12,6 +12,7 @@ internal class Origami : QuintessentialMod {
         Atoms.LoadAtoms();
         Util.GlyphLUT.GenerateLUTs();
         Parts.AddPartTypes();
+        Wheels.AddWheelTypes();
     }
     public override void LoadCompatContent() { }
     public override void FinaliseContent() { }

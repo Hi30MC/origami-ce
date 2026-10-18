@@ -11,9 +11,9 @@
         "": "Nazum",
         "elemental": "Elemental Nazum"
       },
-      "rejya": {
-        "": "Rejya",
-        "elemental": "Elemental Rejya"
+      "reyja": {
+        "": "Reyja",
+        "elemental": "Elemental Reyja"
       },
       "chronos": {
         "": "Chronos",
@@ -61,12 +61,12 @@
         "" : "Glyph of Augmented Composition",
         "description" : "Composes two orimetals according to the Cayley table of A4, augmented by the atom in the bowl. This performs C(a,C(b,c)) where C is the Cayley table. If the bowl is empty, the glyph defaults to Rei."
       },
-      "high_retrieval" : {
-        "" : "Glyph of High Retrieval",
+      "high_regeneration" : {
+        "" : "Glyph of High Regeneration",
         "description" : "Completes the group of four dual-cycle orimetals: Rei, Chronos, Homonculum, and Tao. Place three on the bowl and the last of the four is retrieved from storage vials."
       },
-      "low_retrieval" : {
-        "" : "Glyph of Low Retrieval",
+      "low_regeneration" : {
+        "" : "Glyph of Low Regeneration",
         "description" : "Completes the four groups of three-cycle orimetals. Place two on the bowl and the last of the triple is retrieved from storage vials."
       },
       "translation" : {
@@ -86,8 +86,8 @@
     "permissions": {
       "composition": "Glyph of Composition",
       "augmented_composition": "Glyph of Aug. Comp.",
-      "high_retrieval": "Glyph of High Regen",
-      "low_retrieval": "Glyph of Low Regen",
+      "high_regeneration": "Glyph of High Regen.",
+      "low_regeneration": "Glyph of Low Regen.",
       "translation": "Glyph of Translation",
       "flemmings_wheel": "Flemming's Wheel",
       "sacrifice": "Glyph of Sacrifice",

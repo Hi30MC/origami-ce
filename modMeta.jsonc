@@ -1,6 +1,6 @@
 {
   "mod_id": "origami",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "mod_page_url": "https://github.com/Hi30MC/origami-ce",
   "dll": "Origami.dll",
   "authors": ["Hi30MC"],

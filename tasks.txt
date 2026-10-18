@@ -7,7 +7,7 @@ Tasks:
 * copy -toMod "Origami" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/origami-ce/Content"
 * devMerge --onlyOnChange -id "origami" --mergeXML
 * merge --onlyOnChange --asNamed
-* export -name "Origami" -outputPath "/home/zephyr/Documents/code/opus/mod_dev/origami_test_env/.builds"
+* export -name "Origami" -outputPath "/home/zephyr/Documents/code/opus/mod_dev/mods/origami-ce/.builds"
 * run -args "-devEnv -pseudoLang" --attachDebugger --readLogs
 AutoExit:
   true

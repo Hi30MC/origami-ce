@@ -1,0 +1,15 @@
+{
+  "mod_id": "origami",
+  "version": "0.0.1",
+  "mod_page_url": "https://github.com/Hi30MC/origami-ce",
+  "dll": "Origami.dll",
+  "authors": ["Hi30MC"],
+  // "icon": "textures/template_modid/icon",
+  "mappings": "",
+  "dependencies": {
+    "quintessential_core": "[0.8.1,)",
+    "quintessential_data": "[0.8.1,)",
+    "lithos" : "[0.0.1,)"
+  },
+  "conflicts": []
+}

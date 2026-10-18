@@ -1,0 +1,96 @@
+{
+  "origami": {
+    "": "Origami",
+    "description": "Adds a family of atoms, the Orimetals, which are pseudo-adjacent to the Senneumetals. There are only five glyphs and one wheel.",
+    "atoms": {
+      "rei": {
+        "": "Rei",
+        "elemental": "Elemental Rei"
+      },
+      "nazum": {
+        "": "Nazum",
+        "elemental": "Elemental Nazum"
+      },
+      "rejya": {
+        "": "Rejya",
+        "elemental": "Elemental Rejya"
+      },
+      "chronos": {
+        "": "Chronos",
+        "elemental": "Elemental Chronos"
+      },
+      "zaryan": {
+        "": "Zaryan",
+        "elemental": "Elemental Zaryan"
+      },
+      "iaso": {
+        "": "Iaso",
+        "elemental": "Elemental Iaso"
+      },
+      "tano": {
+        "": "Tano",
+        "elemental": "Elemental Tano"
+      },
+      "maru": {
+        "": "Maru",
+        "elemental": "Elemental Maru"
+      },
+      "homonculum": {
+        "": "Homonculum",
+        "elemental": "Elemental Homonculum"
+      },
+      "lono": {
+        "": "Lono",
+        "elemental": "Elemental Lono"
+      },
+      "lua": {
+        "": "Lua",
+        "elemental": "Elemental Lua"
+      },
+      "tao": {
+        "": "Tao",
+        "elemental": "Elemental Tao"
+      }
+    },
+    "parts": {
+      "composition" : {
+        "" : "Glyph of Composition",
+        "description" : "Composes two orimetals according to the Cayley table of A4."
+      },
+      "augmented_composition" : {
+        "" : "Glyph of Augmented Composition",
+        "description" : "Composes two orimetals according to the Cayley table of A4, augmented by the atom in the bowl. This performs C(a,C(b,c)) where C is the Cayley table. If the bowl is empty, the glyph defaults to Rei."
+      },
+      "high_retrieval" : {
+        "" : "Glyph of High Retrieval",
+        "description" : "Completes the group of four dual-cycle orimetals: Rei, Chronos, Homonculum, and Tao. Place three on the bowl and the last of the four is retrieved from storage vials."
+      },
+      "low_retrieval" : {
+        "" : "Glyph of Low Retrieval",
+        "description" : "Completes the four groups of three-cycle orimetals. Place two on the bowl and the last of the triple is retrieved from storage vials."
+      },
+      "translation" : {
+        "" : "Glyph of Translation",
+        "description" : "If you're seeing this, dm me at hi30 on discord, because something is wrong!"
+      },
+      "flemmings_wheel" : {
+        "" : "Flemming's Wheel",
+        "description" : "By using Flemming's wheel with the glyphs of regeneration, one can construct all known orimetals."
+      },
+      "sacrifice" : {
+        "" : "Glyph of Sacrifice",
+        "description" : "One can obtain great power, but it must come at a cost. Minimum requirement: 666 lives (6 mors)."
+      },
+    },
+    "permission_sections": "Origami",
+    "permissions": {
+      "composition": "Glyph of Composition",
+      "augmented_composition": "Glyph of Aug. Comp.",
+      "high_retrieval": "Glyph of High Regen",
+      "low_retrieval": "Glyph of Low Regen",
+      "translation": "Glyph of Translation",
+      "flemmings_wheel": "Flemming's Wheel",
+      "sacrifice": "Glyph of Sacrifice",
+    }
+  }
+}

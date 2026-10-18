@@ -1,0 +1,15 @@
+Tasks:
+* strings --onlyOnChange
+* intermediary --onlyOnChange
+* newMod -name "Origami"
+* copy -toMod "Origami" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/origami-ce/modMeta.jsonc"
+* copy -toMod "Origami" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/origami-ce/Origami/bin/Debug/net10.0/Origami.dll"
+* copy -toMod "Origami" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/origami-ce/Content"
+* devMerge --onlyOnChange -id "origami" --mergeXML
+* merge --onlyOnChange --asNamed
+* export -name "Origami" -outputPath "/home/zephyr/Documents/code/opus/mod_dev/origami_test_env/.builds"
+* run -args "-devEnv -pseudoLang" --attachDebugger --readLogs
+AutoExit:
+  true
+# CopyTasksPath:
+# /home/zephyr/Documents/code/opus/mod_dev/mods/origami-ce/

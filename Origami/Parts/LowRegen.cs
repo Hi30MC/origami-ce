@@ -52,19 +52,17 @@ internal static class LowRegenerationGlyph {
     {
         if (first)
         {
-            HexIndex bowlA = part.InFrontBy(LowRegenerationBowlA);
-            HexIndex bowlB = part.InFrontBy(LowRegenerationBowlB);
             HexIndex iris = part.InFrontBy(LowRegenerationOutput);
 
             if (sim.FindAtom(iris).HasValue())
             { //iris full
                 return false;
             }
-            if (!sim.GetAtomReference(part, bowlA, [], true).GetOrDefault(out AtomReference bowlAtomA))
+            if (!sim.GetAtomReference(part, LowRegenerationBowlA, [], true).GetOrDefault(out AtomReference bowlAtomA))
             { // bowl A empty
                 return false;
             }
-            if (!sim.GetAtomReference(part, bowlB, [], true).GetOrDefault(out AtomReference bowlAtomB))
+            if (!sim.GetAtomReference(part, LowRegenerationBowlB, [], true).GetOrDefault(out AtomReference bowlAtomB))
             { // bowl B empty
                 return false;
             }

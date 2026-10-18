@@ -62,7 +62,6 @@ internal static class AugmentedCompositionGlyph {
         {
             HexIndex holeA = part.InFrontBy(AugmentedCompInputA);
             HexIndex holeB = part.InFrontBy(AugmentedCompInputB);
-            HexIndex bowl = part.InFrontBy(AugmentedCompBowl);
             HexIndex iris = part.InFrontBy(AugmentedCompOutput);
             AtomType bowlAtomType;
 
@@ -81,7 +80,7 @@ internal static class AugmentedCompositionGlyph {
                 return false;
             }
 
-            bowlAtomType = sim.GetAtomReference(part, bowl, [], true).GetOrDefault(out AtomReference temp) ? temp.atomType : Origami.Atoms.rei; // get bowl atom type, if any.
+            bowlAtomType = sim.GetAtomReference(part, AugmentedCompBowl, [], true).GetOrDefault(out AtomReference temp) ? temp.atomType : Origami.Atoms.rei; // get bowl atom type, if any.
             if (!GlyphLUT.CompositionLUT.TryGetValue(new Tuple<AtomType, AtomType>(inputAtomB.atomType, bowlAtomType), out AtomType temp2))
             {
                 return false;

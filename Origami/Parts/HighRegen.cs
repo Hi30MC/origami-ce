@@ -55,26 +55,23 @@ internal static class HighRegenerationGlyph {
     {
         if (first)
         {
-            HexIndex bowlA = part.InFrontBy(HighRegenerationBowlA);
-            HexIndex bowlB = part.InFrontBy(HighRegenerationBowlB);
-            HexIndex bowlC = part.InFrontBy(HighRegenerationBowlC);
             HexIndex iris = part.InFrontBy(HighRegenerationOutput);
 
             if (sim.FindAtom(iris).HasValue())
             { //iris full
                 return false;
             }
-            if (!sim.GetAtomReference(part, bowlA, [], true).GetOrDefault(out AtomReference bowlAtomA))
+            if (!sim.GetAtomReference(part, HighRegenerationBowlA, [], true).GetOrDefault(out AtomReference bowlAtomA))
             { // bowl A empty
                 Logger.Log("no A found");
                 return false;
             }
-            if (!sim.GetAtomReference(part, bowlB, [], true).GetOrDefault(out AtomReference bowlAtomB))
+            if (!sim.GetAtomReference(part, HighRegenerationBowlB, [], true).GetOrDefault(out AtomReference bowlAtomB))
             { // bowl B empty
                 Logger.Log("no B found");
                 return false;
             }
-            if (!sim.GetAtomReference(part, bowlC, [], true).GetOrDefault(out AtomReference bowlAtomC))
+            if (!sim.GetAtomReference(part, HighRegenerationBowlC, [], true).GetOrDefault(out AtomReference bowlAtomC))
             { // bowl C empty
                 Logger.Log("no C found");
                 return false;

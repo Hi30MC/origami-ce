@@ -1,3 +1,5 @@
 Origami/bin/*
 Origami/obj/*
 .builds
+Origami/Origami.csproj
+tasks.txt

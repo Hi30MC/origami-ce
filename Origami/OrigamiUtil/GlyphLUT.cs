@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System;
 using Origami;
+using Quintessential;
 
-namespace Util;
+namespace OrigamiUtil;
 
 public static class GlyphLUT {
     public static Dictionary<Tuple<AtomType, AtomType>, AtomType> CompositionLUT = [];
@@ -245,29 +246,29 @@ public static class GlyphLUT {
     }
 
     public static void GenerateTranslationLUT() {
-//         if (Origami.NeuvolicsLoaded)
-//         {
-//             TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetIridium(), Atoms.reyja);
-//             TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetMitrum(), Atoms.nazum);
-//             TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetTaceum(), Atoms.lua);
-//             TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetAzulum(), Atoms.lono);
-//             TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetZephiron(), Atoms.rei);
-//             TranslationLUT.Add(Atoms.reyja, ImportManager.NeuvolicsAtoms.GetIridium());
-//             TranslationLUT.Add(Atoms.nazum, ImportManager.NeuvolicsAtoms.GetMitrum());
-//             TranslationLUT.Add(Atoms.lua, ImportManager.NeuvolicsAtoms.GetTaceum());
-//             TranslationLUT.Add(Atoms.maru, ImportManager.NeuvolicsAtoms.GetAzulum());
-//             TranslationLUT.Add(Atoms.rei, ImportManager.NeuvolicsAtoms.GetZephiron());
-//         }
-//
-//         if (Origami.SennmetalsLoaded) {
-//             TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetEitros(), Atoms.tano);
-//             TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetSordi(), Atoms.zaryan);
-//             TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetRofor(), Atoms.lono);
-//             TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetSerket(), Atoms.iaso);
-//             TranslationLUT.Add(Atoms.tano, ImportManager.SennmetalsAtoms.GetEitros());
-//             TranslationLUT.Add(Atoms.zaryan, ImportManager.SennmetalsAtoms.GetSordi());
-//             TranslationLUT.Add(Atoms.lono, ImportManager.SennmetalsAtoms.GetRofor());
-//             TranslationLUT.Add(Atoms.iaso, ImportManager.SennmetalsAtoms.GetSerket());
-//         }
+        if (QuintessentialLoader.IsModPresent("neuvolics"))
+        {
+            TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetIridium(), Atoms.reyja);
+            TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetMitrum(), Atoms.nazum);
+            TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetTaceum(), Atoms.lua);
+            TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetAzulum(), Atoms.lono);
+            TranslationLUT.Add(ImportManager.NeuvolicsAtoms.GetZephiron(), Atoms.rei);
+            TranslationLUT.Add(Atoms.reyja, ImportManager.NeuvolicsAtoms.GetIridium());
+            TranslationLUT.Add(Atoms.nazum, ImportManager.NeuvolicsAtoms.GetMitrum());
+            TranslationLUT.Add(Atoms.lua, ImportManager.NeuvolicsAtoms.GetTaceum());
+            TranslationLUT.Add(Atoms.maru, ImportManager.NeuvolicsAtoms.GetAzulum());
+            TranslationLUT.Add(Atoms.rei, ImportManager.NeuvolicsAtoms.GetZephiron());
+        }
+
+        if (QuintessentialLoader.IsModPresent("sennmetals")) {
+            TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetEitros(), Atoms.tano);
+            TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetSordi(), Atoms.zaryan);
+            TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetRofor(), Atoms.lono);
+            TranslationLUT.Add(ImportManager.SennmetalsAtoms.GetSerket(), Atoms.iaso);
+            TranslationLUT.Add(Atoms.tano, ImportManager.SennmetalsAtoms.GetEitros());
+            TranslationLUT.Add(Atoms.zaryan, ImportManager.SennmetalsAtoms.GetSordi());
+            TranslationLUT.Add(Atoms.lono, ImportManager.SennmetalsAtoms.GetRofor());
+            TranslationLUT.Add(Atoms.iaso, ImportManager.SennmetalsAtoms.GetSerket());
+        }
     }
 }

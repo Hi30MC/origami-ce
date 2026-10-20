@@ -1,8 +1,8 @@
 using System;
 using Quintessential;
-using Util;
+using OrigamiUtil;
 
-namespace Parts;
+namespace OrigamiParts;
 
 internal static class LowRegenerationGlyph {
     public static readonly HexIndex LowRegenerationBowlA = new(-1, 0);

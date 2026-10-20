@@ -1,4 +1,4 @@
-namespace Util;
+namespace OrigamiUtil;
 
 internal struct SacrificeState {
     // ABCX XNNN

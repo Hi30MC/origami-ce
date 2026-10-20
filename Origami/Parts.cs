@@ -1,4 +1,4 @@
-using Parts;
+using OrigamiParts;
 using Quintessential;
 using static Quintessential.PartCycleDelegate;
 
@@ -124,35 +124,30 @@ internal static class Parts {
         Origami.Instance.AddPartType(AugmentedComposition, "augmented_composition", AugmentedCompositionGlyph.Render);
         Origami.Instance.AddPartType(HighRegeneration, "high_regeneration", HighRegenerationGlyph.Render);
         Origami.Instance.AddPartType(LowRegeneration, "low_regeneration", LowRegenerationGlyph.Render);
-        Origami.Instance.AddPartType(Translation, "translation", TranslationGlyph.Render);
         Origami.Instance.AddPartType(Sacrifice, "sacrifice", SacrificeGlyph.Render);
 
         QApi.AddPartTypeToPanel(Composition, PartTypes.triplexBonder);
         QApi.AddPartTypeToPanel(AugmentedComposition, Composition);
         QApi.AddPartTypeToPanel(HighRegeneration, AugmentedComposition);
         QApi.AddPartTypeToPanel(LowRegeneration, HighRegeneration);
-        QApi.AddPartTypeToPanel(Translation, LowRegeneration);
         QApi.AddPartTypeToPanel(Sacrifice, Translation);
 
         Origami.Instance.AddPuzzlePermission("composition");
         Origami.Instance.AddPuzzlePermission("augmented_composition");
         Origami.Instance.AddPuzzlePermission("high_regeneration");
         Origami.Instance.AddPuzzlePermission("low_regeneration");
-        Origami.Instance.AddPuzzlePermission("translation");
         Origami.Instance.AddPuzzlePermission("sacrifice");
 
         QApi.BindGlyphCycle(Composition, new(PartCycleExecutionType.Normal, CompositionGlyph.OnCyle));
         QApi.BindGlyphCycle(AugmentedComposition, new(PartCycleExecutionType.Normal, AugmentedCompositionGlyph.OnCyle));
         QApi.BindGlyphCycle(HighRegeneration, new(PartCycleExecutionType.Normal, HighRegenerationGlyph.OnCyle));
         QApi.BindGlyphCycle(LowRegeneration, new(PartCycleExecutionType.Normal, LowRegenerationGlyph.OnCyle));
-        QApi.BindGlyphCycle(Translation, new(PartCycleExecutionType.Normal, TranslationGlyph.OnCyle));
         QApi.BindGlyphCycle(Sacrifice, new(PartCycleExecutionType.Normal, SacrificeGlyph.OnCyle));
 
         Origami.Instance.AddRecipe(new(), Composition.Id, Composition.Id);
         Origami.Instance.AddRecipe(new(), AugmentedComposition.Id, AugmentedComposition.Id);
         Origami.Instance.AddRecipe(new(), HighRegeneration.Id, HighRegeneration.Id);
         Origami.Instance.AddRecipe(new(), LowRegeneration.Id, LowRegeneration.Id);
-        Origami.Instance.AddRecipe(new(), Translation.Id, Translation.Id);
         Origami.Instance.AddRecipe(new(), Sacrifice.Id, Sacrifice.Id);
     }
 }

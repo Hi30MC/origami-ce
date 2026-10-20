@@ -1,10 +1,9 @@
-using System;
 using System.Linq;
 using MonoMod.Utils;
 using Quintessential;
-using Util;
+using OrigamiUtil;
 
-namespace Parts;
+namespace OrigamiParts;
 
 internal static class SacrificeGlyph {
 

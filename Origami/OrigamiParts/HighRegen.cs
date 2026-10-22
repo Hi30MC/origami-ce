@@ -63,20 +63,16 @@ internal static class HighRegenerationGlyph {
             }
             if (!sim.GetAtomReference(part, HighRegenerationBowlA, [], true).GetOrDefault(out AtomReference bowlAtomA))
             { // bowl A empty
-                Logger.Log("no A found");
                 return false;
             }
             if (!sim.GetAtomReference(part, HighRegenerationBowlB, [], true).GetOrDefault(out AtomReference bowlAtomB))
             { // bowl B empty
-                Logger.Log("no B found");
                 return false;
             }
             if (!sim.GetAtomReference(part, HighRegenerationBowlC, [], true).GetOrDefault(out AtomReference bowlAtomC))
             { // bowl C empty
-                Logger.Log("no C found");
                 return false;
             }
-            Logger.Log("ABC found");
 
             if (!GlyphLUT.HighRegenerationLUT.TryGetValue(new Tuple<AtomType, AtomType, AtomType>(bowlAtomA.atomType, bowlAtomB.atomType, bowlAtomC.atomType), out AtomType output))
             {

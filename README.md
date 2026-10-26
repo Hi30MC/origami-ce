@@ -132,6 +132,10 @@ The rows are the left input (a) and the columns are the right input (b). This ta
 |  Lua |  Lua | Zar. | Hom. | Tano |  Tao | Rey. | Lono |  Rei | Iaso | Chr. | Maru | Naz. |
 |  Tao |  Tao | Iaso | Maru | Hom. | Lono | Naz. |  Lua | Rey. | Chr. | Zar. | Tano |  Rei |
 
+With atom symbol images:
+
+![](composition_table.svg)
+
 ### Glyph of Translation Table
 
 These are bijective (both ways) maps.

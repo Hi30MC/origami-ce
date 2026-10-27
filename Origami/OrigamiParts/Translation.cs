@@ -6,6 +6,7 @@ namespace OrigamiParts;
 internal static class TranslationGlyph {
     public static readonly HexIndex TranslationBowl = new(0, 0);
     public static readonly Texture TranslationBase = AssetLoaderHelper.LoadTexture("textures/parts/Hi30MC/Origami/single_base");
+    public static readonly Texture TranslationBowlSymbol = AssetLoaderHelper.LoadTexture("textures/parts/Hi30MC/Origami/translation_detail");
 
     public static void Render(Part part, Vector2 pos, SolutionEditorBase editor, PartRenderer renderer)
     {
@@ -17,6 +18,7 @@ internal static class TranslationGlyph {
         renderer.RenderBase(TranslationBase, new Vector2(-1, -1), centre, 0f);
 
         renderer.RenderShadowCircle(Assets.textures.parts.calcinator_bowl, TranslationBowl, 0);
+        renderer.RenderUpright(TranslationBowlSymbol, TranslationBowl, Vector2.Zero);
     }
 
     public static bool OnCyle(Sim sim, Part part, PartSimState pss, GlyphRecipe recipe, bool first)

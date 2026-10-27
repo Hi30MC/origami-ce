@@ -31,7 +31,7 @@ internal static class Wheels
             permissionCategory = PuzzlePermissions.None,
             CustomPermissionCheck = perms => perms.Contains(Origami.Instance.GetIdentifier("flemmings_wheel"))
         };
-        QApi.AddPartTypeToPanel(FlemmingsWheel, false);
+        QApi.AddPartTypeToPanel(FlemmingsWheel, PartTypes.ravarisWheel);
         Origami.Instance.AddPartType(FlemmingsWheel, "flemmings_wheel", (part, pos, editor, renderer) => { });
         Origami.Instance.AddPuzzlePermission("flemmings_wheel");
     }

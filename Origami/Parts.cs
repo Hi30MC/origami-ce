@@ -126,7 +126,7 @@ internal static class Parts {
         Origami.Instance.AddPartType(LowRegeneration, "low_regeneration", LowRegenerationGlyph.Render);
         Origami.Instance.AddPartType(Sacrifice, "sacrifice", SacrificeGlyph.Render);
 
-        QApi.AddPartTypeToPanel(Composition, PartTypes.triplexBonder);
+        QApi.AddPartTypeToPanel(Composition, PartTypes.equilibriumGlyph);
         QApi.AddPartTypeToPanel(AugmentedComposition, Composition);
         QApi.AddPartTypeToPanel(HighRegeneration, AugmentedComposition);
         QApi.AddPartTypeToPanel(LowRegeneration, HighRegeneration);

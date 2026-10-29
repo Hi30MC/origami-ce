@@ -81,6 +81,9 @@
         "" : "Glyph of Sacrifice",
         "description" : "One can obtain great power, but it must come at a cost. Minimum requirement: 666 lives (6 mors)."
       },
+      "disposal_error" : {
+        "" : "The stored energy of the lives you sacrificed were released into the world, causing you, your loved ones, your countrymen, the world, and the entire solar system to vaporise instantly. You cannot run from what you have done. You have let loose a destruction so large the entire universe shakes with the aftermath. You did this. You shall pay for your ignorance and your sins."
+      },
     },
     "permission_sections": "Origami",
     "permissions": {
